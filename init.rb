@@ -14,7 +14,7 @@ require "integrity"
 Integrity.configure do |c|
   c.database     "sqlite3:integrity.db"
   c.directory    "builds"
-  c.base_url     "http://ci.example.org"
+  c.base_url     "http://ci.plus2dev.com"
   c.log          "integrity.log"
   c.github       "SECRET"
   c.build_all!
