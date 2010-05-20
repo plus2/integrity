@@ -1,6 +1,9 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "lib"))
 
-require ".bundle/environment"
+require "rubygems"
+require "bundler"
+Bundler.setup
+
 require "integrity"
 
 # Uncomment as appropriate for the notifier you want to use
