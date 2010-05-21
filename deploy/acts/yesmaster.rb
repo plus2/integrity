@@ -34,4 +34,6 @@ act 'ping github' do
   # ssh to github with `StrictHostKeyChecking no`. This stops us having to manually agreeing to add the key to our known_hosts.
   # This is probably a gaping security hole, mind.
   sh("ssh -o'StrictHostKeyChecking no' git@github.com; exit 0")
+
+  file(node.home+".ssh/config", :string => "Host github.com\n  IdentityFile #{id_dsa}", :mode => 0600)
 end
