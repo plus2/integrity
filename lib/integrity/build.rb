@@ -1,10 +1,13 @@
+require 'integrity/helpers/pretty_output'
 module Integrity
   class Build
     include DataMapper::Resource
+    include Integrity::Helpers::PrettyOutput
 
     property :id,           Serial
     property :project_id,   Integer   # TODO :nullable => false
     property :output,       Text,     :default => "", :length => 1048576
+    property :output_html,  Text,     :default => "", :length => 1048576
     property :successful,   Boolean,  :default => false
     property :started_at,   DateTime
     property :completed_at, DateTime
@@ -16,6 +19,9 @@ module Integrity
 
     before :destroy do
       commit.destroy!
+    end
+    before :update do
+      self.output_html = bash_color_codes(output)
     end
 
     def successful?
