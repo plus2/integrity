@@ -20,7 +20,7 @@ module Integrity
     before :destroy do
       commit.destroy!
     end
-    before :save, :render_html_output
+    # before :save, :render_html_output
 
     def successful?
       successful == true
