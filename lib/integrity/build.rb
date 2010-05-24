@@ -20,9 +20,7 @@ module Integrity
     before :destroy do
       commit.destroy!
     end
-    before :save do
-      self.output_html = bash_color_codes(self.output)
-    end
+    before :save, :render_html_output
 
     def successful?
       successful == true
@@ -61,5 +59,11 @@ module Integrity
       when :building then "#{commit.short_identifier} is building"
       end
     end
+
+    private
+    def render_html_output
+      attribute_set(:output_html, bash_color_codes(output))
+    end
+    
   end
 end
