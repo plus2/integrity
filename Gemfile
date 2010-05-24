@@ -24,9 +24,10 @@ gem "sinatra-authorization", "1.0.0"
 # gem "sinatra-ditties"
 # = IRC
 # gem "shout-bot"
+
 # = Campfire
-# gem "broach", :git => "git://github.com/Manfred/broach.git"
-# gem "nap", :git => "git://github.com/qrush/nap.git"
+gem "broach", :git => "git://github.com/Manfred/broach.git"
+gem "nap", :git => "git://github.com/qrush/nap.git"
 
 # = Dependencies for the :dj builder
 # gem "activerecord"
