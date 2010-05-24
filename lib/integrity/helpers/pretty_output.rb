@@ -95,7 +95,7 @@ class AnsiParser
   AnsiPre  = %r{^([^\e]*)(?=\e\[\d+m)}
   AnsiScan = %r{\e\[(\d+)m([^\e]*)}
   def parse(text)
-    text = text.gsub('&', '&amp;').gsub('"', '&quot;').gsub('<', '&lt;').gsub('>', '&gt;')
+    #text = text.gsub('&', '&amp;').gsub('"', '&quot;').gsub('<', '&lt;').gsub('>', '&gt;')
 
     if text.include?("\e")
       text.sub!(AnsiPre,'')
