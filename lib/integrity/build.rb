@@ -20,8 +20,8 @@ module Integrity
     before :destroy do
       commit.destroy!
     end
-    before :update do
-      self.output_html = bash_color_codes(output)
+    before :save do
+      self.output_html = bash_color_codes(self.output)
     end
 
     def successful?
