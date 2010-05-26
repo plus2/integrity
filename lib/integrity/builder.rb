@@ -17,6 +17,7 @@ module Integrity
         complete
       rescue
         Integrity.log "build raised an exception:\n#{$!.class}: #{$!}\n#{$!.backtrace.join("\n")}"
+        raise $!
       end
     end
 

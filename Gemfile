@@ -29,6 +29,11 @@ gem "sinatra-authorization", "1.0.0"
 gem "broach", :git => "git://github.com/Manfred/broach.git"
 gem "nap", :git => "git://github.com/qrush/nap.git"
 
+group :dev do
+  gem "shotgun"
+  gem "thin"
+end
+
 # = Dependencies for the :dj builder
 # gem "activerecord"
 # gem "sqlite3-ruby"
@@ -65,3 +70,5 @@ group :test do
   gem "webmock"
   gem "turn"
 end
+
+# vim: ft=ruby
