@@ -11,9 +11,13 @@ module Integrity
     end
 
     def build
-      start
-      run
-      complete
+      begin
+        start
+        run
+        complete
+      rescue
+        Integrity.log "build raised an exception:\n#{$!.class}: #{$!}\n#{$!.backtrace.join("\n")}"
+      end
     end
 
     def start
