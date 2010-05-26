@@ -1,5 +1,5 @@
 consolidate_node do |node,defaults|
-  %w[home current_path].each {|k| node.attributes[k] = Pathname(node.attributes[k])}
+  %w[home path current_path].each {|k| node.attributes[k] = Pathname(node.attributes[k])}
 end
 
 act 'yesmaster/prepare_app' do
