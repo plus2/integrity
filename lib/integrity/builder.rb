@@ -37,7 +37,7 @@ module Integrity
     def complete
       Integrity.log "Build #{commit} exited with #{@status} got:\n #{@output}"
 
-      @build.update!(
+      @build.update(
         :completed_at => Time.now,
         :successful   => @status,
         :output       => @output
