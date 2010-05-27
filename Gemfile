@@ -19,6 +19,9 @@ gem "json", "1.1.9"
 gem "sinatra", "1.0.0"
 gem "sinatra-authorization", "1.0.0"
 
+# we bundle apps' gems (via integrity-build-wrapper)
+gem "bundler"
+
 # These are dependencies for the various notifiers. Uncomment as appropriate.
 # = Email
 # gem "sinatra-ditties"
@@ -28,7 +31,9 @@ gem "sinatra-authorization", "1.0.0"
 # = Campfire
 gem "broach", :git => "git://github.com/Manfred/broach.git"
 gem "nap", :git => "git://github.com/qrush/nap.git"
+
 gem 'integrity-artifacts', :git => "git://github.com/plustwo/integrity-artifacts.git"
+# gem 'integrity-artifacts', :path => "/Users/lachie/Dropbox/dev/plus2/integrity-artifacts"
 
 group :dev do
   gem "shotgun"
