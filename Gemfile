@@ -28,7 +28,7 @@ gem "sinatra-authorization", "1.0.0"
 # = Campfire
 gem "broach", :git => "git://github.com/Manfred/broach.git"
 gem "nap", :git => "git://github.com/qrush/nap.git"
-gem 'integrity-artifacts', :git => "http://github.com/subakva/integrity-artifacts.git"
+gem 'integrity-artifacts', :git => "git://github.com/plustwo/integrity-artifacts.git"
 
 group :dev do
   gem "shotgun"
