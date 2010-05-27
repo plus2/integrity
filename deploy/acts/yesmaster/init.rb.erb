@@ -24,3 +24,5 @@ Integrity.configure do |c|
   c.build_all!
   c.builder      :threaded, 5
 end
+
+Integrity::Notifier::Artifacts.public = Pathname(__FILE__).dirname+'public'
