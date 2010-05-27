@@ -322,7 +322,7 @@ sources:
 - Git: 
     uri: git://github.com/plustwo/integrity-artifacts.git
     git: git://github.com/plustwo/integrity-artifacts.git
-    ref: 80c2aa92d32280de4f579be1a1c893f824f21f30
+    ref: 90de639cb1bc2e367c17cabdbb88bf4a9e426ab4
 - Git: 
     uri: git://github.com/qrush/nap.git
     git: git://github.com/qrush/nap.git

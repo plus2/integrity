@@ -17,5 +17,4 @@ doc/integrity.html
 builds
 .sass-cache
 public/integrity.css
-Gemfile.lock
 .bundle/
