@@ -22,3 +22,6 @@
   %pre.output
     :preserve
       #{build.output_html}
+
+  -if build.successful?
+    %a{:href=>build_path(build,'artifacts')} build artifacts

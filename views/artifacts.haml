@@ -1,0 +1,11 @@
+artifacts dude
+-if current_build.artifacts.empty?
+  .blank_slate
+    %p No artifacts, huh?
+    %h1
+      How about making some happen?
+-else
+  %ul#projects
+    -current_build.artifacts.each do |name,url|
+      %li
+        %a{:href=>url}=name
