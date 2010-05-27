@@ -5,12 +5,14 @@ module Integrity
       @uri    = uri
       @branch = branch
       @commit = commit == "HEAD" ? head : commit
+
+      @commit = branch if @commit.blank?
     end
 
     def checkout
       run "git clone #{@uri} #{directory}", false unless cloned?
       run "git fetch origin"
-      run "git checkout origin/#{@branch}"
+      # This is redundant: run "git checkout origin/#{@branch}"
       run "git reset --hard #{@commit}"
     end
 
