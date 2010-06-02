@@ -9,6 +9,8 @@ act 'yesmaster/prepare_app' do
   git(node.home+'scripts/integrity-build-wrapper', :repo => 'git://github.com/plustwo/integrity-build-wrapper.git')
   symlink(node.home+'bin/plus2build', :to => node.home+'scripts/integrity-build-wrapper/integrity_build_wrapper.rb')
 
+  gem 'rcov'
+
   template(node.current_path+'init.rb', :src => 'init.rb.erb')
 
   act_now 'ping github'
