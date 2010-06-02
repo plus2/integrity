@@ -12,46 +12,46 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
-  sqlite3-ruby: 
+  rake: 
     group: 
-    - :test
+    - :default
     version: ">= 0"
-  haml: 
-    group: 
-    - :default
-    version: = 2.2.17
-  dm-validations: 
-    group: 
-    - :default
-    version: = 0.10.2
-  uuidtools: 
-    group: 
-    - :default
-    version: = 2.1.1
   data_objects: 
     group: 
     - :default
     version: = 0.10.1
-  rake: 
+  uuidtools: 
     group: 
     - :default
+    version: = 2.1.1
+  dm-validations: 
+    group: 
+    - :default
+    version: = 0.10.2
+  haml: 
+    group: 
+    - :default
+    version: = 2.2.17
+  sqlite3-ruby: 
+    group: 
+    - :test
     version: ">= 0"
   contest: 
     group: 
     - :test
     version: ">= 0"
-  addressable: 
-    group: 
-    - :default
-    version: = 2.1.1
-  dm-types: 
-    group: 
-    - :default
-    version: = 0.10.2
   thor: 
     group: 
     - :default
     version: = 0.9.9
+  dm-types: 
+    group: 
+    - :default
+    version: = 0.10.2
+  addressable: 
+    group: 
+    - :default
+    version: = 2.1.1
   randexp: 
     group: 
     - :test
@@ -64,18 +64,18 @@ dependencies:
     group: 
     - :default
     version: = 0.10.2
-  thin: 
-    group: 
-    - :dev
-    version: ">= 0"
-  dm-core: 
-    group: 
-    - :default
-    version: = 0.10.2
   dm-timestamps: 
     group: 
     - :default
     version: = 0.10.2
+  dm-core: 
+    group: 
+    - :default
+    version: = 0.10.2
+  thin: 
+    group: 
+    - :dev
+    version: ">= 0"
   webrat: 
     group: 
     - :test
@@ -88,27 +88,27 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
-  sinatra: 
-    group: 
-    - :default
-    version: = 1.0.0
   json: 
     group: 
     - :default
     version: = 1.1.9
-  nap: 
-    group: 
-    - :test
-    version: ">= 0"
-  bundler: 
+  sinatra: 
     group: 
     - :default
+    version: = 1.0.0
+  broach: 
+    group: 
+    - :test
     version: ">= 0"
   bcrypt-ruby: 
     group: 
     - :default
     version: = 2.1.2
-  broach: 
+  bundler: 
+    group: 
+    - :default
+    version: ">= 0"
+  nap: 
     group: 
     - :test
     version: ">= 0"
@@ -152,18 +152,18 @@ dependencies:
     group: 
     - :default
     version: = 0.10.2
-  do_sqlite3: 
-    group: 
-    - :default
-    version: = 0.10.1
-  sinatra-authorization: 
-    group: 
-    - :default
-    version: = 1.0.0
   shotgun: 
     group: 
     - :dev
     version: ">= 0"
+  sinatra-authorization: 
+    group: 
+    - :default
+    version: = 1.0.0
+  do_sqlite3: 
+    group: 
+    - :default
+    version: = 0.10.1
   nokogiri: 
     group: 
     - :test
@@ -298,7 +298,7 @@ specs:
     version: 1.2.2
 - webrat: 
     version: 0.6.0
-hash: c85967e4f3d7eb1521e1c8a3067e801a14db310c
+hash: 28b7240e21de5b0fa95fed1b31e22841d88e7f16
 sources: 
 - Git: 
     uri: git://github.com/qrush/nap.git
@@ -308,6 +308,10 @@ sources:
     uri: git://github.com/Manfred/broach.git
     git: git://github.com/Manfred/broach.git
     ref: 549fa8a04123237d04fbcbdafa4abcec49d8094b
+- Git: 
+    uri: git://github.com/tobi/delayed_job.git
+    git: git://github.com/tobi/delayed_job.git
+    ref: e7661d397bb960d77c11ec5779bc662d12cf3638
 - Git: 
     uri: git://github.com/tobi/delayed_job.git
     git: git://github.com/tobi/delayed_job.git
