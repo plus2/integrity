@@ -16,46 +16,42 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
-  rake: 
-    group: 
-    - :default
-    version: ">= 0"
-  data_objects: 
-    group: 
-    - :default
-    version: = 0.10.1
-  uuidtools: 
-    group: 
-    - :default
-    version: = 2.1.1
-  dm-validations: 
-    group: 
-    - :default
-    version: = 0.10.2
   haml: 
     group: 
     - :default
     version: = 2.2.17
+  dm-validations: 
+    group: 
+    - :default
+    version: = 0.10.2
+  uuidtools: 
+    group: 
+    - :default
+    version: = 2.1.1
+  data_objects: 
+    group: 
+    - :default
+    version: = 0.10.1
+  rake: 
+    group: 
+    - :default
+    version: ">= 0"
   contest: 
     group: 
     - :test
     version: ">= 0"
-  integrity-artifacts: 
-    group: 
-    - :default
-    version: ">= 0"
-  thor: 
-    group: 
-    - :default
-    version: = 0.9.9
-  dm-types: 
-    group: 
-    - :default
-    version: = 0.10.2
   addressable: 
     group: 
     - :default
     version: = 2.1.1
+  dm-types: 
+    group: 
+    - :default
+    version: = 0.10.2
+  thor: 
+    group: 
+    - :default
+    version: = 0.9.9
   randexp: 
     group: 
     - :test
@@ -72,11 +68,11 @@ dependencies:
     group: 
     - :dev
     version: ">= 0"
-  dm-timestamps: 
+  dm-core: 
     group: 
     - :default
     version: = 0.10.2
-  dm-core: 
+  dm-timestamps: 
     group: 
     - :default
     version: = 0.10.2
@@ -92,27 +88,27 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
-  json: 
-    group: 
-    - :default
-    version: = 1.1.9
   sinatra: 
     group: 
     - :default
     version: = 1.0.0
-  broach: 
+  json: 
+    group: 
+    - :default
+    version: = 1.1.9
+  nap: 
     group: 
     - :test
+    version: ">= 0"
+  bundler: 
+    group: 
+    - :default
     version: ">= 0"
   bcrypt-ruby: 
     group: 
     - :default
     version: = 2.1.2
-  bundler: 
-    group: 
-    - :default
-    version: ">= 0"
-  nap: 
+  broach: 
     group: 
     - :test
     version: ">= 0"
@@ -156,14 +152,14 @@ dependencies:
     group: 
     - :default
     version: = 0.10.2
-  sinatra-authorization: 
-    group: 
-    - :default
-    version: = 1.0.0
   do_sqlite3: 
     group: 
     - :default
     version: = 0.10.1
+  sinatra-authorization: 
+    group: 
+    - :default
+    version: = 1.0.0
   shotgun: 
     group: 
     - :dev
@@ -252,9 +248,6 @@ specs:
     version: 2.2.17
 - hpricot: 
     version: 0.8.2
-- integrity-artifacts: 
-    version: 0.1.1
-    source: 3
 - json: 
     version: 1.1.9
 - linecache: 
@@ -305,7 +298,7 @@ specs:
     version: 1.2.2
 - webrat: 
     version: 0.6.0
-hash: 8173eb77103bfef40737ffce8da457bf17ffe231
+hash: c85967e4f3d7eb1521e1c8a3067e801a14db310c
 sources: 
 - Git: 
     uri: git://github.com/qrush/nap.git
@@ -319,10 +312,6 @@ sources:
     uri: git://github.com/tobi/delayed_job.git
     git: git://github.com/tobi/delayed_job.git
     ref: e7661d397bb960d77c11ec5779bc662d12cf3638
-- Git: 
-    uri: git://github.com/plustwo/integrity-artifacts.git
-    git: git://github.com/plustwo/integrity-artifacts.git
-    ref: 90de639cb1bc2e367c17cabdbb88bf4a9e426ab4
 - Git: 
     uri: git://github.com/qrush/nap.git
     git: git://github.com/qrush/nap.git

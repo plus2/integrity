@@ -32,9 +32,6 @@ gem "bundler"
 gem "broach", :git => "git://github.com/Manfred/broach.git"
 gem "nap", :git => "git://github.com/qrush/nap.git"
 
-gem 'integrity-artifacts', :git => "git://github.com/plustwo/integrity-artifacts.git"
-# gem 'integrity-artifacts', :path => "/Users/lachie/Dropbox/dev/plus2/integrity-artifacts"
-
 group :dev do
   gem "shotgun"
   gem "thin"
