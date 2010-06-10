@@ -43,8 +43,8 @@ group :dev do
 end
 
 # = Dependencies for the :dj builder
-gem "activerecord"
-gem "sqlite3-ruby"
+gem "activerecord", "2.3.5"
+gem "sqlite3-ruby", "1.2.5"
 gem "delayed_job", :git => "git://github.com/tobi/delayed_job.git"
 
 # = Dependency for the :resque builder

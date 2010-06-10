@@ -188,9 +188,9 @@ specs:
 - ParseTree: 
     version: 3.0.5
 - activesupport: 
-    version: 2.3.8
+    version: 2.3.5
 - activerecord: 
-    version: 2.3.8
+    version: 2.3.5
 - addressable: 
     version: 2.1.1
 - ansi: 
@@ -295,7 +295,7 @@ specs:
 - sinatra-ditties: 
     version: 0.0.2
 - sqlite3-ruby: 
-    version: 1.3.0
+    version: 1.2.5
 - thin: 
     version: 1.2.7
 - thor: 
@@ -306,7 +306,7 @@ specs:
     version: 1.2.2
 - webrat: 
     version: 0.6.0
-hash: f6f40f7443c59ee04a8cefbfa8d3073cdd3f2955
+hash: 18a8bb9f0478f16d34e0a69d4426c9c8bd2faec8
 sources: 
 - Git: 
     uri: git://github.com/qrush/nap.git
