@@ -27,7 +27,7 @@ dependencies:
   dm-validations: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   haml: 
     group: 
     - :default
@@ -47,7 +47,7 @@ dependencies:
   dm-types: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   addressable: 
     group: 
     - :default
@@ -63,15 +63,15 @@ dependencies:
   dm-aggregates: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   dm-timestamps: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   dm-core: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   thin: 
     group: 
     - :dev
@@ -103,7 +103,7 @@ dependencies:
   dm-sqlite-adapter: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   bcrypt-ruby: 
     group: 
     - :default
@@ -111,7 +111,7 @@ dependencies:
   bundler: 
     group: 
     - :default
-    version: ">= 0"
+    version: = 0.9.26
   nap: 
     group: 
     - :test
@@ -155,7 +155,7 @@ dependencies:
   dm-migrations: 
     group: 
     - :default
-    version: = 1.0.0.rc3
+    version: = 1.0.0
   shotgun: 
     group: 
     - :dev
@@ -204,7 +204,7 @@ specs:
     version: 0.1.4
     source: 1
 - bundler: 
-    version: 0.9.24
+    version: 0.9.26
 - columnize: 
     version: 0.3.1
 - contest: 
@@ -219,23 +219,23 @@ specs:
 - extlib: 
     version: 0.9.15
 - dm-core: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - dm-aggregates: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - dm-do-adapter: 
     version: 1.0.0
 - dm-migrations: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - do_sqlite3: 
     version: 0.10.2
 - dm-sqlite-adapter: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - randexp: 
     version: 0.1.5
 - dm-sweatshop: 
     version: 1.0.0
 - dm-timestamps: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - fastercsv: 
     version: 1.5.3
 - json_pure: 
@@ -245,9 +245,9 @@ specs:
 - uuidtools: 
     version: 2.1.1
 - dm-types: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - dm-validations: 
-    version: 1.0.0.rc3
+    version: 1.0.0
 - eventmachine: 
     version: 0.12.10
 - facets: 
@@ -306,7 +306,7 @@ specs:
     version: 1.2.2
 - webrat: 
     version: 0.6.0
-hash: 545f341d4336cb18c2163bcc473498ab5a3d88b3
+hash: f6f40f7443c59ee04a8cefbfa8d3073cdd3f2955
 sources: 
 - Git: 
     uri: git://github.com/qrush/nap.git
