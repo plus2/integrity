@@ -28,17 +28,15 @@ module Integrity
       payload = JSON.parse(params[:payload])
 
       repository = payload.delete("repository")
-      branch     = payload.delete("ref").split("/").last
+      branch     = payload.delete("ref").split("refs/heads/").last
 
-      uri =
+      unless uri = payload.delete("uri")
         if repository["private"]
           "git@github.com:#{URI(repository["url"]).path[1..-1]}"
         else
           URI(repository["url"]).tap { |u| u.scheme = "git" }.to_s
         end
-
-      # TODO
-      uri = repository["url"] if settings.test?
+      end
 
       commits =
         if settings.build_all?
