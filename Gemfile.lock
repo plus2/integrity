@@ -19,7 +19,7 @@ dependencies:
   data_objects: 
     group: 
     - :default
-    version: = 0.10.1
+    version: = 0.10.2
   uuidtools: 
     group: 
     - :default
@@ -27,7 +27,7 @@ dependencies:
   dm-validations: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   haml: 
     group: 
     - :default
@@ -47,7 +47,7 @@ dependencies:
   dm-types: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   addressable: 
     group: 
     - :default
@@ -63,15 +63,15 @@ dependencies:
   dm-aggregates: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   dm-timestamps: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   dm-core: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   thin: 
     group: 
     - :dev
@@ -100,6 +100,10 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
+  dm-sqlite-adapter: 
+    group: 
+    - :default
+    version: = 1.0.0.rc3
   bcrypt-ruby: 
     group: 
     - :default
@@ -123,7 +127,7 @@ dependencies:
   extlib: 
     group: 
     - :default
-    version: = 0.9.14
+    version: = 0.9.15
   ParseTree: 
     group: 
     - :test
@@ -151,7 +155,7 @@ dependencies:
   dm-migrations: 
     group: 
     - :default
-    version: = 0.10.2
+    version: = 1.0.0.rc3
   shotgun: 
     group: 
     - :dev
@@ -163,7 +167,7 @@ dependencies:
   do_sqlite3: 
     group: 
     - :default
-    version: = 0.10.1
+    version: = 0.10.2
   nokogiri: 
     group: 
     - :test
@@ -176,7 +180,7 @@ specs:
 - rake: 
     version: 0.8.7
 - ZenTest: 
-    version: 4.3.1
+    version: 4.3.2
 - RubyInline: 
     version: 3.8.4
 - sexp_processor: 
@@ -200,7 +204,7 @@ specs:
     version: 0.1.4
     source: 1
 - bundler: 
-    version: 0.9.25
+    version: 0.9.24
 - columnize: 
     version: 0.3.1
 - contest: 
@@ -208,38 +212,42 @@ specs:
 - daemons: 
     version: 1.0.10
 - data_objects: 
-    version: 0.10.1
+    version: 0.10.2
 - delayed_job: 
     version: 1.7.0
     source: 2
 - extlib: 
-    version: 0.9.14
+    version: 0.9.15
 - dm-core: 
-    version: 0.10.2
+    version: 1.0.0.rc3
 - dm-aggregates: 
-    version: 0.10.2
+    version: 1.0.0.rc3
+- dm-do-adapter: 
+    version: 1.0.0
 - dm-migrations: 
+    version: 1.0.0.rc3
+- do_sqlite3: 
     version: 0.10.2
+- dm-sqlite-adapter: 
+    version: 1.0.0.rc3
 - randexp: 
     version: 0.1.5
 - dm-sweatshop: 
-    version: 0.10.2
+    version: 1.0.0
 - dm-timestamps: 
-    version: 0.10.2
+    version: 1.0.0.rc3
 - fastercsv: 
     version: 1.5.3
 - json_pure: 
-    version: 1.2.4
+    version: 1.4.3
 - stringex: 
     version: 1.1.0
 - uuidtools: 
     version: 2.1.1
 - dm-types: 
-    version: 0.10.2
+    version: 1.0.0.rc3
 - dm-validations: 
-    version: 0.10.2
-- do_sqlite3: 
-    version: 0.10.1
+    version: 1.0.0.rc3
 - eventmachine: 
     version: 0.12.10
 - facets: 
@@ -287,7 +295,7 @@ specs:
 - sinatra-ditties: 
     version: 0.0.2
 - sqlite3-ruby: 
-    version: 1.2.5
+    version: 1.3.0
 - thin: 
     version: 1.2.7
 - thor: 
@@ -298,7 +306,7 @@ specs:
     version: 1.2.2
 - webrat: 
     version: 0.6.0
-hash: 28b7240e21de5b0fa95fed1b31e22841d88e7f16
+hash: 545f341d4336cb18c2163bcc473498ab5a3d88b3
 sources: 
 - Git: 
     uri: git://github.com/qrush/nap.git
